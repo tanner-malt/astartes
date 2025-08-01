@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astartes - Warhammer 40k Crusade Game</title>
+  <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+  <header>
+    <h1>Astartes: Warmaster's Crusade</h1>
+    <nav>
+      <button data-panel="galaxy" class="active">Galaxy Map</button>
+      <button data-panel="fleet">Fleet</button>
+      <button data-panel="ship">Ship Detail</button>
+      <button data-panel="planet">Planet Management</button>
+      <button data-panel="resources">Resources</button>
+      <button data-panel="events">Event Log</button>
+      <button data-panel="research">Research/Upgrades</button>
+      <button data-panel="achievements">Achievements</button>
+    </nav>
+  </header>
+  <main>
+    <section id="panel-galaxy" class="panel active">
+      <h2>Loading Galaxy Map...</h2>
+    </section>
+    <section id="panel-fleet" class="panel">
+      <h2>Fleet Management</h2>
+    </section>
+    <section id="panel-ship" class="panel">
+      <h2>Ship Detail</h2>
+    </section>
+    <section id="panel-planet" class="panel">
+      <h2>Planet Management</h2>
+    </section>
+    <section id="panel-resources" class="panel">
+      <h2>Resources</h2>
+    </section>
+    <section id="panel-events" class="panel">
+      <h2>Events/Story</h2>
+    </section>
+    <section id="panel-research" class="panel">
+      <h2>Research/Upgrades</h2>
+    </section>
+    <section id="panel-achievements" class="panel">
+      <h2>Achievements & Officers</h2>
+    </section>
+  </main>
+  
+  <!-- Game Scripts - Load in dependency order -->
+  <script src="src/js/game/GameState.js"></script>
+  <script src="src/js/ui/UIController.js"></script>
+  <script src="src/js/ui/GalaxyPanel.js"></script>
+  <script src="src/js/ui/FleetPanel.js"></script>
+  <script src="src/js/ui/ResourcePanel.js"></script>
+  <script src="src/js/ui/AchievementPanel.js"></script>
+  <script src="src/js/game/GameActions.js"></script>
+  <script src="src/js/main.js"></script>
+</body>
+</html>
